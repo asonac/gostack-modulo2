@@ -1,0 +1,49 @@
+//Comando para inicialiar o package.json
+yarn init -y
+
+//Adicionar o express
+yarn add express
+
+//Typescript como dependência de desenvolvimento
+yarn add typescript -D
+
+//Gerar o arquivo tsconfig.json
+yarn tsc --init
+
+//Converter o código typescript da pasta './src' para javascript na pasta './dist'
+//Ver arquivo tsconfig.json
+yarn tsc
+
+//Toda ver que a lib der erro, instalar os tipos da lib em dev (não é necessário em prod)
+yarn add @types/express -D
+
+
+//Converter para javascrit e rodar o servidor
+yarn tsc
+node dist/server.js
+
+//Convertor de arquivos de ts para js e mantem o servidor rodando após alterações de arquivos
+//tsc + nodemon
+yarn add ts-node-dev -D
+
+
+//Para padronização do código
+yarn add eslint -D
+
+//Para executar o eslint
+yarn eslint --init
+
+//Instalar as dependência depois das configurações
+yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.20.1 @typescript-eslint/parser@latest
+
+//Para corrigir a importação de arquivos no typescript
+ yarn add -D eslint-import-resolver-typescript
+
+ //Adiconar o prettier no projeto
+ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+ //Lib de id's únicos
+ yarn add uuidv4
+
+ //Lib ou (uma da melhores bibliotecas para trabalhar com datas)
+ yarn add date-fns
