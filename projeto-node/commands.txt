@@ -104,3 +104,9 @@ yarn add -D @types/multer
 
 //pacote para padronizar os erros asyncs
 yarn add express-async-errors
+
+//biblioteca de segurança de acesso das rotas das api's
+yarn add cors
+ 
+//e as referencias a lib
+yarn add @types/cors
